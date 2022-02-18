@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Chart Tool</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+
+<body class="ball-img">
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" id="brand" style="display: flex;" href="#">Charting Application</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+            </div>
+        </nav>
+
+        <div class="title-container">
+            <div class="title-box">
+                <h5>Fill out all of the following fields to build a bar graph:</h5>
+                <form>
+                    <div class="row">
+                        <div class="col-2">
+                            <label>Dataset:</label>
+                        </div>
+                        <div class="col" style="display: flex; padding: 0 6px">
+                            <input id="datasetInput" type="text"></input>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>Labels:</label>
+                        </div>
+                        <div class="col">
+                            <input id="label1Input" type="text"></input>
+                        </div>
+                        <div class="col">
+                            <input id="label2Input" type="text"></input>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label>Data:</label>
+                        </div>
+                        <div class="col">
+                            <input id="data1Input" type="text"></input>
+                        </div>
+                        <div class="col">
+                            <input id="data2Input" type="text"></input>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input id="graphSubmit" type="submit" value="Build Graph"></input>
+                        </div>
+                    </div>
+                </form>
+                <div id="results">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <footer>
+            <h6>- <a href="https://github.com/olsonjb/chartAPI">https://github.com/olsonjb/chartAPI</a>
+                -</h6>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
+        integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <script text="type/javascript" src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
